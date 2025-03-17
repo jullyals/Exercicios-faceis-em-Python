@@ -3,106 +3,108 @@
 <head>
 <title>
     Desafio
-    </title>
+</title>
+    /* Estilo do formulário utilizando CSS*/
     <meta charset="UTF-8">
     <style>
     	body {
   			background-color: silver;
         	color: black;
-		}
-		*{
+		  }
+		  *{
   			font-family:verdana
-		}
-		h1 {
+		  }
+		  h1{
   			color: purple;
   			text-align: center;
     	}
-    	h3 {
+      h3{
   			text-align: center;
     	}
-    	fieldset {
+      fieldset {
     		width:60%;
-         	margin:0 auto;
-          	border-radius:15px;
-          	background-color:white;
-          	box-shadow:2px 2px 2px gray;
-		}
-    input,select, textarea, button{
-    border-radius:4px;
-  padding:5px;
-  margin:5px;
-}
-    label {
-  font-weight: bold;
-}
+        margin:0 auto;
+        border-radius:15px;
+        background-color:white;
+        box-shadow:2px 2px 2px gray;
+		  }
+      input,select, textarea, button{
+        border-radius:4px;
+        padding:5px;
+        margin:5px;
+      }
+      label {
+        font-weight: bold;
+      }
     </style>
    
 </head>
 <body>
-<h1>Modelo de página</h1>
-<form method="post" name="form name" action="#">
+  <h1>Modelo de página</h1>
+    <form method="post" name="form name" action="#">
     <fieldset>
+    < !-- No formulário tem que conter dados de entrada: Nome, DN, End, Sexo, bens pessoais e exp pessoais -->
     <h3>Formulário:</h3>
-  <label for="name">Nome Completo:</label>    
-  <input type="text" id="name" name="name" value=""><br><br>
-  <label for="DN"> Data de nascimento:</label>
-  <input type="text" id="DN" name="DN" value=""><br><br>
-    <label for="Endereço"> Endereço:</label>
-  <input type="text" id="Endereço" name="Endereço" value=""><br><br>
-    <label for="Nº"> Número:</label>
-  <input type="text" id="Número" name="DN" value=""><br><br>
-    <label for="Cidade"> Cidade:</label>
-  <input type="text" id="Cidade" name="Cidade" value=""><br><br>
-        <label for="Estado"> Estado:</label>
-  <select name="estado"><br><br>
-            <option value="ac">Acre</option>
-                    <option value="al">Alagoas</option>
-                    <option value="ap">Amapá</option>
-                    <option value="am">Amazonas</option>
-                    <option value="ba">Bahia</option>
-                    <option value="ce">Ceará</option>
-                    <option value="es">Espírito Santo</option>
-                    <option value="go">Goiás</option>
-                    <option value="ma">Maranhão</option>
-                    <option value="mt">Mato Grosso</option>
-                    <option value="ms">Mato Grosso do Sul</option>
-                    <option value="mg">Minas Gerais</option>
-                    <option value="pa">Pará</option>
-                    <option value="pb">Paraíba</option>
-                    <option value="pr">Paraná</option>
-                    <option value="pe">Pernambuco</option>
-                    <option value="pi">Piaui</option>
-                    <option value="rj">Rio de Janeiro</option>
-                    <option value="rn">Rio Grande do Norte</option>
-                    <option value="rs">Rio Grande do Sul</option>
-                    <option value="ro">Rondônia</option>
-                    <option value="rr">Roraima</option>
-                    <option value="sc">Santa Catarina</option>
-                    <option value="sp">São Paulo</option>
-                    <option value="se">Sergipe</option>
-                    <option value="to">Tocantins</option>                    
-                    <option value="df">Distrito Federal</option>
+      <label for="name">Nome Completo:</label>    
+      <input type="text" id="name" name="name" value=""><br><br>
+      <label for="DN"> Data de nascimento:</label>
+      <input type="text" id="DN" name="DN" value=""><br><br>
+      <label for="Endereço"> Endereço:</label>
+      <input type="text" id="Endereço" name="Endereço" value=""><br><br>
+      <label for="Nº"> Número:</label>
+      <input type="text" id="Número" name="DN" value=""><br><br>
+      <label for="Cidade"> Cidade:</label>
+      <input type="text" id="Cidade" name="Cidade" value=""><br><br>
+      <label for="Estado"> Estado:</label>
+      <select name="estado"><br><br>
+        <option value="ac">Acre</option>
+        <option value="al">Alagoas</option>
+        <option value="ap">Amapá</option>
+        <option value="am">Amazonas</option>
+        <option value="ba">Bahia</option>
+        <option value="ce">Ceará</option>
+        <option value="es">Espírito Santo</option>
+        <option value="go">Goiás</option>
+        <option value="ma">Maranhão</option>
+        <option value="mt">Mato Grosso</option>
+        <option value="ms">Mato Grosso do Sul</option>
+        <option value="mg">Minas Gerais</option>
+        <option value="pa">Pará</option>
+        <option value="pb">Paraíba</option>
+        <option value="pr">Paraná</option>
+        <option value="pe">Pernambuco</option>
+        <option value="pi">Piaui</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="rn">Rio Grande do Norte</option>
+        <option value="rs">Rio Grande do Sul</option>
+        <option value="ro">Rondônia</option>
+        <option value="rr">Roraima</option>
+        <option value="sc">Santa Catarina</option>
+        <option value="sp">São Paulo</option>
+        <option value="se">Sergipe</option>
+        <option value="to">Tocantins</option>                    
+        <option value="df">Distrito Federal</option>
+      </select><br><br>
+      <label for="Sexo">Sexo:</label>
+        <select name="sexo"><br><br>                
+          <option value="f">Feminino</option>
+          <option value="m">Masculino</option>
         </select><br><br>
-        <label for="Sexo">Sexo:</label>
-  <select name="sexo"><br><br>                
-                    <option value="f">Feminino</option>
-                    <option value="m">Masculino</option>
-        </select><br><br>
-        <label for="bp">Bens pessoais:</label><br>
+      <label for="bp">Bens pessoais:</label><br>
         <input type="checkbox" id="bp1" name="bp1" value="Casa">
-  <label for="bp1"> Casa</label><br>
-  <input type="checkbox" id="bp2" name="bp2" value="Carro">
-  <label for="bp2"> Carro</label><br>
-  <input type="checkbox" id="bp3" name="bp3" value="Moto">
-  <label for="bp3"> Moto</label><br><br>
-        <label for="textarea">Text area:</label><br>        
+        <label for="bp1"> Casa</label><br>
+        <input type="checkbox" id="bp2" name="bp2" value="Carro">
+        <label for="bp2"> Carro</label><br>
+        <input type="checkbox" id="bp3" name="bp3" value="Moto">
+        <label for="bp3"> Moto</label><br><br>
+      <label for="textarea">Text area:</label><br>        
         <textarea name="Text area">
-Experiências pessoais
-</textarea><br><br>  
-        <input type="button" name="Envia" value="Enviar">
-        <input type="button" name="Limpa" value="Limpar">
+          Experiências pessoais:
+        </textarea><br><br>  
+      <input type="button" name="Envia" value="Enviar">
+      <input type="button" name="Limpa" value="Limpar">
     </fieldset>    
-</form>
+    </form>
 
 </body>
 </html>
